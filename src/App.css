@@ -1,12 +1,26 @@
+#root{
+  background: grey;
+  position: fixed;
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  flex-direction: column;
+  align-items: center;
+}
 .App {
+  position: fixed;
   text-align: center;
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
-
+h1{margin: 0}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

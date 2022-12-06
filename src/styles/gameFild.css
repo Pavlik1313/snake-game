@@ -1,0 +1,21 @@
+.items{
+    margin: 0;
+    background: lightgrey;
+    width: calc(100% / 25);
+    height: 100%;
+    border: 0;
+    border-top: 1px solid grey;
+    border-left: 1px solid grey;
+}
+.field {
+    display: flex;
+    flex-direction: column;
+    width: min(calc(100vw - 40px), calc(100vh - 300px));
+    height: min(calc(100vw - 40px), calc(100vh - 300px));
+    border: 10px darkgreen solid;
+}
+.rows{
+    display: flex;
+    width: 100%;
+    height: calc(100% / 25);
+}
