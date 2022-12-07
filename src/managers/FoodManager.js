@@ -44,14 +44,12 @@ class FoodManager {
             if (rand <= this.basicFood[i].probability) {
                 this.foodPositions[pos] = this.basicFood[i].name;
                 const item = document.getElementById(`${pos}`);
-                console.log(item.style.background)
                 item.style.background = this.basicFood[i].color
                 break
             }
         }
     }
     addGoodFood(){
-        console.log('spawn good food')
         const pos = this.getFreePos();
         const rand = Math.random();
         for (let i = 0; i < this.goodFood.length; i++) {

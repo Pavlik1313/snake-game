@@ -23,10 +23,8 @@ export default class GameOverForm extends React.Component{
                 score: this.state.score
             }).then(
             ()=>{
-                console.log('send')
                 axios.get(`${serverURL}/records/${this.props.username}`).then(
                     (res)=>{
-                        console.log(`Your best score: ${res.data}`)
                         this.setState({bestScore: res.data.score})
                     })
                 axios.get(`${serverURL}/records`).then(

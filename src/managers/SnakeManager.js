@@ -99,10 +99,8 @@ class SnakeManager {
             this.direction = this.nextDirection;
             return this.body
         }
-
-
     }
-
-
 }
+
+
 export default new SnakeManager();

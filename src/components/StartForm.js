@@ -7,21 +7,22 @@ export default class StartForm extends React.Component{
    }
 
 
+    componentDidMount() {
+       const username = localStorage.username;
+       if(username) document.getElementsByClassName('username-input')[0].value = username
+    }
+
+
     onClick = ()=>{
         const {startF} = this.props;
         const username = document.getElementsByClassName('username-input')[0].value;
         if(username.length < 3 || username.length > 15) alert("Username length must be between 3 and 15 charters")
         else {
-            console.log(username)
             startF(username)
             localStorage.username = username
         }
     }
 
-
-    componentDidMount() {
-       document.getElementsByClassName('username-input')[0].value = localStorage.username
-    }
 
 
     render() {

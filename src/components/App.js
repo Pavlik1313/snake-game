@@ -68,9 +68,6 @@ class App extends React.Component{
       gameIsPaused: false,
       gameIsOver: false,
       score: 0
-    }, ()=>{
-      console.log(this.state)
-
     })
   }
   pause = () => {

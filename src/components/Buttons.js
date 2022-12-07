@@ -9,22 +9,22 @@ export default function Buttons (props){
             <button className='up-button' onClick={
                 ()=>{
                 snakeManager.changeDirection('up')
-            }}>🢁</button>
+            }}>ᐃ</button>
 
             <button className='right-button' onClick={
                 ()=>{
                     snakeManager.changeDirection('right')
-                }}>🢂</button>
+                }}>ᐅ</button>
 
             <button className='down-button' onClick={
                 ()=>{
                     snakeManager.changeDirection('down')
-                }}>🢃</button>
+                }}>ᐁ</button>
 
             <button className='left-button' onClick={
                 ()=>{
                     snakeManager.changeDirection('left')
-                }}>🢀</button>
+                }}>ᐊ</button>
         </div>
     </div>)
 }
