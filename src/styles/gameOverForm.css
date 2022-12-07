@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+.form-background{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,.6);
+    backdrop-filter: blur(5px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+.game-over-form-content{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: max(5%, 30px);
+
+}
+h1, h2, h4, button {
+    color: white;
+}
+.leaders-table-header{
+    width: 70%;
+    max-width: 700px;
+    background: linear-gradient(0, rgba(21, 149, 21, .8) 0%, rgba(21, 149, 21, .2 ) 100%);
+}
+.leader-header-record{
+    width: 100%;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.leader-record{
+    width: 100%;
+    color: white;
+    background: linear-gradient(0, rgba(21, 149, 21, .4) 0%, rgba(21, 149, 21, .0 ) 100%);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.leaders-label{
+    width: 100%;}
+.leaders-table{
+    width: 70%;
+    max-width: 700px;
+    max-height: min(calc(100vh - 300px), 400px);
+    overflow: auto;
+    margin-bottom: 10px;
+}
+.leaders-table::-webkit-scrollbar{
+    background: rgba(21, 149, 21, .4 );
+    width: 10px;
+}
+.leaders-table::-webkit-scrollbar-thumb{
+    background: rgb(21, 149, 21);
+    width: 10px;
+    border-radius: 5px;
+}
+.leaders-table::-webkit-scrollbar-button{
+    height: 0;
+}
+.play-button{
+    background: linear-gradient(0deg, #008000 0, #7CFC00 100%);
+    width: 70%;
+    max-width: 700px;
+    font-size: 35px;
+    text-shadow: black 3px 3px 10px;
+    padding: 3px 15px;
+    border: 0;
+    border-bottom: darkgreen 7px solid;
+    border-radius: 20px;
+}
+.play-button:hover{
+    background: linear-gradient(0deg, #109010 0, #8CFF10 100%);
+}
+.play-button:active{
+    margin-top: 5px;
+    background: linear-gradient(0deg, #159515 0, #90FF15 100%);
+    border-bottom: darkgreen 2px solid;
+}
+.leader-rank, .leader-name, .leader-score{
+    width: 100px;
+}
