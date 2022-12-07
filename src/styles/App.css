@@ -51,9 +51,6 @@ h1{margin: 0}
   }
 }
 @media (orientation: landscape) {
-  #App{
-    justify-content: center;
-  }
   .score-label {
     position: fixed;
     top: 5px;
