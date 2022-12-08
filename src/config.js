@@ -1,5 +1,5 @@
 const config = {
-    serverURL: 'http://54.175.24.134:3030',
+    serverURL: 'http://localhost:3030',
     BOARD_SIZE: 30, //Довжина сторони грального поля
 
     snake: {
